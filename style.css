@@ -1,0 +1,131 @@
+#st-float-btn {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: #7c4dff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 99999;
+    box-shadow: 0 4px 15px rgba(124,77,255,0.4);
+    user-select: none;
+    transition: all 0.3s;
+}
+
+#st-float-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+#st-float-panel {
+    position: fixed;
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    background: #2b2b3d;
+    color: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    z-index: 99998;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border: 1px solid #444;
+}
+
+#st-float-panel.open {
+    display: flex;
+}
+
+#st-float-panel .panel-header {
+    background: #7c4dff;
+    color: white;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#st-float-panel .panel-header .close-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+#st-float-panel .panel-content {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 400px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+#st-float-panel .section-title {
+    color: #bb86fc;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+
+#st-float-panel .cmd-btn {
+    background: #3d3d5c;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+#st-float-panel .cmd-btn:hover {
+    background: #7c4dff;
+    border-color: #7c4dff;
+    color: white;
+}
+
+#st-float-panel .divider {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 10px 0;
+}
+
+#st-float-panel textarea {
+    width: 100%;
+    height: 60px;
+    background: #1e1e2e;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 13px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#st-float-panel .send-btn {
+    width: 100%;
+    margin-top: 5px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#st-float-panel .send-btn:hover {
+    background: #45a049;
+}
